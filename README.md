@@ -17,24 +17,30 @@ Windows
 ```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
 macOS / Linux
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 ### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 4. Run backend (FastAPI)
 ```bash
 uvicorn service:app --reload
+```
 
 Backend will be available at:
 ```bash
 http://127.0.0.1:8000
+```
 
 ### 5. Run frontend (Streamlit)
 ```bash
 streamlit run app.py
+```
