@@ -2,7 +2,7 @@
 Predicts medical insurance charges based on user input using machine learning.
 
 ## About the project
-This dataset provides a granular look at the personal health data of 1,338 individuals in the United States. It reveals how factors like age, BMI, smoking habits, and family size influence the final annual medical bills charged by health insurance companies. For the sake of this project we will use the charges as a target variable whose values need to be predicted and the rest of the fields will be treated as dependent variables.
+This dataset provides a granular look at the personal health data of 1,338 individuals in the United States. It reveals how factors like age, BMI, smoking habits, and family size influence the final annual medical bills charged by health insurance companies. For the sake of this project we will use the charges as a target variable whose values need to be predicted and the the rest of the fields will be treated as independent variables (features).
 Since this is going to be a regression problem, we will use traditional Machine Learning algorithms like Linear Regression, SVR, Decision Tree Regressor. We will perform an analysis of the predictions of each of these algorithms and choose the one that gives us the best metrics after hyper-parameter tuning of the model during training.
 
 ## Usage
@@ -45,3 +45,18 @@ http://127.0.0.1:8000
 ```bash
 streamlit run app.py
 ```
+
+Open browser at:
+```bash
+http://localhost:8501
+```
+
+## Model performance
+
+The final model was selected based on evaluation metrics on the test set.
+
+- R²: 0.774
+- RMSE: 5328.84 USD
+- MAPE: 12.4%
+
+These results indicate that the model predicts annual medical insurance costs with an average percentage error of under 12.4%.
