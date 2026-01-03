@@ -11,6 +11,7 @@ Since this is going to be a regression problem, we will use traditional Machine 
 ```bash
 git clone https://github.com/dimonchik-ll/Medical-Insurance-Cost-Prediction-Project.git
 cd Medical-Insurance-Cost-Prediction-Project
+```
 
 ### 2. Create and activate virtual environment
 Windows
